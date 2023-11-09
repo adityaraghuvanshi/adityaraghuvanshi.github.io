@@ -222,10 +222,17 @@ html {
 .image-placeholder {
     margin-right: 200px;
 }
+#lottie-one {
+    vertical-align: middle;
+}
 .diya {
-    right: 45px;
     position: absolute;
-    top: 762px;
+    width: 100vw;
+    height: 35vh;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 .image-placeholder,
 .second-screen {
