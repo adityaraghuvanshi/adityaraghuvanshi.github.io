@@ -13,7 +13,7 @@ body {
     scroll-behavior: smooth;
 }
 
-.navBar {
+.navbar {
     height: 70px;
     position: fixed;
     background-color: transparent;
@@ -23,45 +23,44 @@ body {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 10px;
-}
-.navBar .container {
     display: flex;
-    justify-content: space-between;
+}
+.navbar-left {
+    display: flex;
+    width: 50%;
     align-items: center;
     transition: all 0.3s ease-in-out;
 }
-.navBar ul {
+.navbar-right {
+    width: 50%;
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
+    margin-right: 20px;
 }
-.navBar a {
+.navbar-right a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    padding: 7px 15px;
     transition: all 0.3s ease-in-out;
     font-weight: bold;
+    margin-left: 20px;
 }
-.navBar.active a {
+.navbar.active a {
     color: black;
 }
 
-.navBar a:hover {
+.navbar a:hover {
     font-size: larger;
 }
-.navBar a.current,
-.nav a:hover {
+.navbar a.current,
+.navbar a:hover {
     font-weight: bold;
 }
-#shop-logo {
-    padding-top: 0%;
-    margin-top: 0%;
+.navbar img {
     width: 120px;
     height: 70px;
-}
-.logo {
-    justify-content: center;
+    padding: 5px;
 }
 /* screen 1 */
 .first-container {
@@ -83,21 +82,23 @@ body {
 }
 .left {
     width: 50%;
-    display: column;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
 }
-.left .text-top {
-    margin-top: 30%;
-    margin-left: 20px;
-}
+
 .left h3 {
-    font-size: 70px;
+    font-size: 50px;
     color: #fff;
+    line-height: 85px;
 }
 .left p {
+    width: 80%;
     color: #fff;
+    line-height: 25px;
 }
 .left button {
-    width: 180px;
+    width: 150px;
     color: #000;
     font-size: 12px;
     padding: 12px 0;
@@ -108,7 +109,7 @@ body {
     margin-top: 30px;
     cursor: pointer;
 }
-.left button:hover{
+.left button:hover {
     background-color: #777;
     color: #fff;
 }
@@ -183,84 +184,23 @@ body {
     transform: translateY(-10px);
     color: transparent;
 }
-/* .slider-container {
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    width: 100vw;
-}
-
-.left-slide {
-    height: 100%;
-    width: 35%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 0.5s ease-in-out;
-}
-
-.left-slide > div {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-
-.left-slide h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-    margin-top: -30px;
-}
-
-.right-slide {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 35%;
-    width: 65%;
-    transition: transform 0.5s ease-in-out;
-}
-
-.right-slide > div {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100%;
-    width: 100%;
-}
-
-.image-container {
-    display: flex;
-}
-
-.image-container img {
-    width: 150px;
-    height: 1500px;
-} */
 
 /* screen 2 */
 
-.image-placeholder {
-    margin-right: 200px;
-}
-
 .image-placeholder,
 .second-screen {
+    height: 110%;
     align-items: center;
     justify-content: center;
     display: flex;
-    margin: 0;
-    height: 900px;
     background-image: linear-gradient(white, #f4d701);
 }
 .card {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
-    width: 350px;
+    width: 270px;
+    height: 350px;
     margin: 12px;
     transform: translateY(100px);
 }
@@ -279,7 +219,10 @@ body {
 .card:hover {
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.2);
 }
-
+#first-card .card-header {
+    border-bottom: 0.5px solid;
+    border-color: beige;
+}
 .card-header {
     height: 200px;
 }
@@ -302,36 +245,14 @@ body {
 }
 
 /* screen 3*/
-.diya-1 {
-    position: absolute;
-    width: 100vw;
-    z-index: 1;
-    height: 20%;
-    padding: 0;
-    margin: 0;
-    justify-content: end;
-    align-items: center;
-    display: flex;
-}
-#lottie-two {
-    margin-right: 180px;
-}
 
 .shop-info {
     display: flex;
-    height: 900px;
+    height: 110%;
     background-image: url(images/top-view-copy-space-multi-colored-marmalades-yellow-background.jpg);
     background-size: cover;
     align-items: center;
     justify-content: center;
-    position: relative;
-}
-.shop-info h1 {
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    display: flex;
-    padding: 30px;
 }
 .shop-info-card {
     justify-content: center;
@@ -339,64 +260,41 @@ body {
     display: flex;
     border-radius: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    width: 1150px;
-    height: 600px;
+    width: 70%;
+    height: 70%;
     background-color: transparent;
     transition: 0.5s;
+    margin-top: 5%;
 }
 .shop-info-card:hover {
     background-color: #fff;
 }
-.shop-card-image {
-    height: 450px;
-    width: 400px;
-    margin-left: 50px;
-}
-.shop-card-image img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
-.shop-card-content {
-    padding: 30px;
-    margin-left: 300px;
-}
-.shop-card-title {
-    height: 20px;
-}
-.shop-info-text {
-    color: #777;
-    width: 450px;
-    height: 500px;
-    font-size: larger;
-    text-align: justify;
-    margin-right: 50px;
-}
-.shop-card-info-text {
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+.shop-info-card-left {
+    width: 50%;
     display: flex;
-    margin-left: -150px;
+    justify-content: center;
+}
+.shop-info-card-left img {
+    width: 20rem;
+}
+.shop-info-card-right {
+    width: 50%;
+    padding: 20px;
+}
+.shop-info-card-right h3 {
+    margin-bottom: 50px;
+}
+.shop-info-card-right p {
+    text-align: justify;
+    width: 90%;
 }
 
 /* screen4 */
 
-.lamp-section {
-    position: absolute;
-    display: flex;
-    height: 107vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: end;
-    margin: 0;
-    padding: 0;
-    z-index: 0;
-}
 .rangoli {
     position: absolute;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: end;
 }
@@ -407,7 +305,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 110%;
     overflow: hidden;
     margin: 0;
     padding: 10px;
@@ -453,71 +351,42 @@ body {
 }
 
 /* screen 5 */
-.diya-2 {
-    position: absolute;
-    width: 80vw;
-    height: 106vh;
-    display: flex;
-    align-items: end;
-    justify-content: end;
-}
+
 .contactUs {
     background-image: linear-gradient(white, rgb(219, 191, 12));
     background-size: cover;
     align-items: center;
     justify-content: center;
     margin: 0;
-    height: 800px;
+    height: 120%;
     display: flex;
-}
-.contactUs h1 {
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    display: flex;
-    padding: 30px;
 }
 .contactUs-card {
     background-color: #fff;
-
+    width: 70%;
+    height: 60%;
     margin: 0;
     justify-content: end;
     align-items: center;
     display: flex;
     border-radius: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    width: 1150px;
 }
-
-.contactUs-card-content {
-    padding: 30px;
-    margin-left: 200px;
-    line-height: 35px;
-}
-.contactUs-card-title {
-    height: 20px;
-}
-.contactUs-info-text {
-    color: #4b4747;
-    width: 450px;
-    height: 400px;
-    font-size: larger;
-    text-align: justify;
-    margin-left: 20px;
-    font-weight: bold;
-}
-
-.content {
+.contactUs-card-left {
     display: flex;
+    justify-content: center;
+    width: 50%;
 }
-#first-lottie,
-#second-lottie,
-#third-lottie,
-#forth-lottie {
-    margin-bottom: 635px;
-    margin-left: 40px;
+.contactUs-card-right {
+    width: 50%;
+    padding: 30px;
 }
-
-#second-screen-header {
-    position: absolute;
+.contactUs-info-text p,
+h3 {
+    color: #000000;
+    opacity: 80%;
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: bold;
+    line-height: 30px;
 }
