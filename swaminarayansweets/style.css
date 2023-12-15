@@ -42,8 +42,8 @@ body {
 .navbar-right a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    font-weight: bold;
+    transition: all 0.1s;
+    font-weight: 500;
     margin-left: 20px;
 }
 .navbar.active a {
@@ -194,7 +194,7 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
-    background-image: linear-gradient(#f89f01,white,#f89f01);
+    background-image: linear-gradient(#f89f01, white, #f89f01);
 }
 .card {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -250,7 +250,7 @@ body {
 .shop-info {
     display: flex;
     height: 110%;
-    background-image: linear-gradient(#f89f01,white,#f89f01);
+    background-image: linear-gradient(#f89f01, white, #f89f01);
     background-size: cover;
     align-items: center;
     justify-content: center;
@@ -301,7 +301,7 @@ body {
 }
 
 .testimonial-body {
-    background-image: linear-gradient(#f89f01,white,#f89f01);
+    background-image: linear-gradient(#f89f01, white, #f89f01);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -354,7 +354,7 @@ body {
 /* screen 5 */
 
 .contactUs {
-    background-image: linear-gradient(#f89f01,white,#f89f01);
+    background-image: linear-gradient(#f89f01, white, #f89f01);
     background-size: cover;
     align-items: center;
     justify-content: center;
