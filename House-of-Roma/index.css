@@ -1,0 +1,233 @@
+@font-face {
+    font-family: nuno-sans-light;
+    src: url(Fonts/Nunito_Sans/static/NunitoSans_10pt-Light.ttf);
+}
+@font-face {
+    font-family: nuno-sans-medium;
+    src: url(fonts/Nunito_Sans/static/NunitoSans_10pt-Medium.ttf);
+}
+@font-face {
+    font-family: nuno-sans-bold;
+    src: url(fonts/Nunito_Sans/static/NunitoSans_10pt-Bold.ttf);
+}
+@font-face {
+    font-family: satisfy;
+    src: url(fonts/Satisfy/Satisfy-Regular.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+nav .logo {
+    height: 60%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    padding: 20px 0;
+}
+.logo {
+    color: rgba(40, 39, 39, 0.852);
+    font-family: satisfy;
+    font-size: 2rem;
+    padding: 0 10px;
+}
+.nav-links {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    width: 100%;
+    background-color: #e3cccc;
+    display: flex;
+    height: 6rem;
+    flex-direction: column;
+}
+ul {
+    display: flex;
+}
+ul li {
+    list-style: none;
+    font-family: nuno-sans-light;
+    padding-left: 20px;
+    font-size: 1rem;
+}
+.nav-link {
+    color: rgba(56, 53, 53, 0.752);
+    text-decoration: none;
+}
+.nav-link:hover {
+    border-bottom: 1px solid #000;
+    font-weight: 400;
+    color: black;
+}
+
+.Footer-container {
+    height: 50%;
+    width: 100%;
+    background-color: #faece9;
+    color: rgba(56, 53, 53, 0.752);
+    display: flex;
+    padding: 10px 25px;
+    align-items: center;
+}
+.first,
+.second,
+.third {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    text-align: center;
+}
+
+.first {
+    padding: 0 10%;
+}
+.Footer-container ul {
+    display: block;
+}
+.Footer-container li:hover {
+    color: #000000;
+    cursor: pointer;
+}
+.footer-link {
+    text-decoration: none;
+    color: rgba(56, 53, 53, 0.752);
+}
+.homepage-container {
+    height: 60%;
+    width: 100%;
+}
+
+/* Style for the first section */
+.section-1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+/* Style for the left part of the first section */
+.section-1-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the image in the left part of the first section */
+.section-1-left #first-img {
+    height: 60vh;
+}
+
+/* Style for the right part of the first section */
+.section-1-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10%;
+}
+.section-1-right h1 {
+    font-family: nuno-sans-bold;
+    color: #000000ae;
+}
+.section-1-right h2 {
+    font-family: nuno-sans-medium;
+    color: #2e2c2cae;
+}
+.section-2 {
+    height: 40%;
+    width: 100%;
+    background-color: #e3cccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in 0.5s;
+}
+h1,
+h2,
+h3 {
+    color: #2e2c2cae;
+    padding: 20px 0;
+}
+p {
+    color: #000000ae;
+    font-size: 1.5rem;
+}
+.section-2 h1 {
+    font-family: nuno-sans-medium;
+    flex-direction: row;
+    display: flex;
+}
+.section-2 h3 {
+    font-family: nuno-sans-light;
+    padding: 22px 0;
+    transition: all ease 0.5s;
+}
+.section-2 h3:hover {
+    padding: 0 20px;
+    font-weight: 900;
+    font-size: 20px;
+    color: black;
+}
+.section-3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.section-3-left,
+.section-3-right {
+    width: 25%;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.section-3-middle {
+    padding: 0 7%;
+    font-family: nuno-sans-medium;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+}
+.text-middle li {
+    font-size: 1rem;
+    transition: all ease 0.5s;
+}
+.text-middle li:hover {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #000;
+}
+#shop-50K {
+    text-align: center;
+    font-family: nuno-sans-medium;
+    text-decoration: none;
+    transition: ease all 0.5s;
+}
+#shop-50K:hover {
+    font-size: large;
+    color: #000;
+}
+.section-3-right img,
+.section-3-left img {
+    height: 500px;
+    width: 280px;
+}
