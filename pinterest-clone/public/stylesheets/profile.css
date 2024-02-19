@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ecf1f2;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1 {
+    height: 65%;
+    width: 70%;
+    padding: 10px 10px;
+}
+
+.section-2 {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: first baseline;
+    justify-content: left;
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: solid 1px;
+    background-color: #fff;
+}
+
+.profile-circle {
+    margin-top: 15px;
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(58, 58, 58);
+    overflow: hidden;
+
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info .name {
+    margin-top: 5px;
+    font-size: 40px;
+}
+
+.profile-info .username,
+.description,
+.tagline {
+    font-size: 15px;
+    color: rgb(129, 120, 120);
+    line-height: 10px;
+}
+
+.btns {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 50%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btns form {
+    display: flex;
+    flex-direction: row;
+}
+
+.btns .button {
+    background-color: rgb(241, 11, 11);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #f5f5ff;
+    padding: 15px 15px;
+    text-decoration: none;
+
+}
+
+.flex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: start;
+}
